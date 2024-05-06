@@ -1,9 +1,10 @@
 import React from 'react';
 // import 'antd/dist/antd.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './pages/login'
-import Register from './pages/register'
-import { Toaster } from 'react-hot-toast'; 
+import Login from './pages/Login'
+import Register from './pages/Register'
+import { Toaster } from 'react-hot-toast';
+import Home from './pages/Home';
 // import { Button } from 'antd';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
 
       <Route path='/login' element ={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
-
+      <Route path ="/" element = {<Home />} />
     </Routes>
 
     </BrowserRouter>
